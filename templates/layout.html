@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="../static/styles/lightbox.css">
 <script src="../static/js/jquery-2.1.3.min.js"></script>
 <script src="../static/js/lightbox.js"></script>
-<!-- <script src="../static/js/script.js"></script> -->
 <title>
 	Liam Sharpe - Online CV
 </title>
@@ -21,21 +20,17 @@
 		Online CV
 	</h2>
 </div>
-<div id="container">
-	<div id="links">
-			<a href="{{ url_for('home') }}">Home</a>
-	</div>
-	<div id="links">
-			Projects
-	</div>
-	<div id="links">
-			Other
-	</div>
-	<div id="links">
-			Contact me
-	</div>
-
+<div id="containerLinks">
+<ul id="nav">
+	<li><a href="{{ url_for('home') }}">Home</a></li>
+	<li><a href="{{ url_for('projects') }}">Projects</a></li>
+	<li><a href="{{ url_for('other') }}">Other</a></li>
+	<li><a href="{{ url_for('contact') }}">Contact me</a></li>
+</ul>
+</div>
 	{% block body %} {% endblock %}
+
+
 
 
 <footer>
