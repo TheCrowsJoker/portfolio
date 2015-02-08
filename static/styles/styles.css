@@ -1,3 +1,5 @@
+/* general stuff */
+
 h1 {
 	color: #f00;
 	text-align: center;
@@ -25,8 +27,14 @@ body {
 }
 
 a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+p.a, a:visited, a:hover, a:active {
   color: #f00;
 }
+
+/* Home page */
 
 #head {
 	width: auto;
@@ -41,7 +49,7 @@ a, a:visited, a:hover, a:active {
 	margin: 0% 5% 0% 5%;
 }
 
-img {
+#gallery img {
 	width: 300px;
 	border: 1px solid #fff;
 	box-shadow: 10px 10px 5px;
@@ -55,7 +63,7 @@ img {
 	border-radius: 20px;
 	border: 1px solid #fff;
 	box-shadow: 10px 10px 5px;
-	padding: 5px;
+	padding: 10px;
 	background-color: #000;
 	display: table-cell;
 }
@@ -73,7 +81,39 @@ img {
 	border-radius: 20px;
 	box-shadow: 10px 10px 5px;
 	margin: 5% 5% 5% 5%;
-	padding: 5px;
+	padding: 10px;
 	background-color: #000;
 	float: left;
+}
+
+/* Contact me page */
+
+#ss-form {
+	width: auto;
+}
+
+.ss-q-title {
+	color: #f00;
+}
+
+#containerContact {
+	width: auto;
+	border-radius: 20px;
+	border: 1px solid #fff;
+	box-shadow: 10px 10px 5px;
+	margin: 5% 5% 0% 5%;
+	background-color: #000;
+	padding: 20px;
+}
+
+.ss-q-short {
+	width: 100%;
+}
+
+.ss-q-long {
+	width: 100%;
+}
+
+.ss-legal {
+	color: #fff;
 }
