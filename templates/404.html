@@ -1,8 +1,15 @@
 {% extends "layout.html" %}
 {% block body %}
 
-<p>
-	testing error page
-</p>
 
+<div id="error">
+	<p>
+	!!!<br>
+	Sorry, an error has occured.<br>
+	The page you are looking for does not seem to exist.<br>
+	Please check your spelling and try again.<br>
+	If the problem persists do not hesitate to <a href="{{ url_for('contact') }}">contact me</a>.<br>
+	!!!<br>
+</p>
+</div>
 {% endblock %}

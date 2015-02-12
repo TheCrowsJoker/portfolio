@@ -66,6 +66,7 @@ p a {
 }
 
 /* Home page */
+
 #container {
 	margin: 0% 5% 5% 5%;
 }
@@ -148,4 +149,17 @@ p a {
 .jfk-button:active {
     background: #f00;
     border: solid 1px #f00;
+}
+
+/* #404 page */
+
+#error {
+	color: #fff;
+	width: auto;
+	margin: 0% 5% 5% 5%;
+	text-align: center;	
+	background: #000;
+	font: bold 30px "Century Gothic", Sans-serif;
+	border-radius: 20px;
+	border: 1px solid #fff;
 }
