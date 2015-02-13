@@ -9,9 +9,9 @@ def home():
 def projects():
     return render_template("projects.html")
 
-@app.route("/other")
-def other():
-    return render_template("other.html")
+@app.route("/events")
+def events():
+    return render_template("events.html")
 
 @app.route("/contact")
 def contact():
