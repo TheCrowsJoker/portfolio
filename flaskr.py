@@ -9,9 +9,9 @@ def home():
 def projects():
     return render_template("projects.html")
 
-@app.route("/events")
-def events():
-    return render_template("events.html")
+@app.route("/blog")
+def blog():
+    return render_template("blog.html")
 
 @app.route("/contact")
 def contact():
@@ -22,5 +22,4 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 if __name__ == '__main__':
-    app.debug = True
     app.run()
