@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-<!-- connect to the stylesheets and javascript sources -->
-<link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
-<link rel="stylesheet" type="text/css" href="../static/styles/lightbox.css">
-<script src="../static/js/jquery-2.1.3.min.js"></script>
-<script src="../static/js/lightbox.js"></script>
-<link rel="shortcut icon" href="../static/images/Icon.ico">
-<title>
-	Liam Sharpe - Online CV
-</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="keywords" content="Liam Sharpe, Computer, Programmer, Science, ">
+	    <meta name="description" content="Website of Liam Sharpe, a computer scientist.">
+	    <meta name="author" content="Liam Sharpe">
+		<!-- connect to the stylesheets and javascript sources -->
+		<link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="../static/styles/lightbox.css">
+		<script src="../static/js/jquery-2.1.3.min.js"></script>
+		<script src="../static/js/lightbox.js"></script>
+		<link rel="shortcut icon" href="../static/images/Icon.ico">
+		<title>
+			Liam Sharpe - Online CV
+		</title>
+	</head>
 
-<body>
-<header>
-	<!-- thwitter follow button link -->
-	<a class="twitter-follow-button"
-  href="https://twitter.com/TheCrowsJoker"
-  data-show-count="false"
-  data-lang="en">
-		Follow @Liam Sharpe
+	<body>
+	<header>
+		<!-- twitter follow button link -->
+		<a class="twitter-follow-button"
+	  href="https://twitter.com/TheCrowsJoker"
+	  data-show-count="false"
+	  data-lang="en">
+			Follow @Liam Sharpe
+		</a>
+		<!-- title of the page -->
+		<a href="{{ url_for('home') }}">
+		<div id="head">
+			<h1>
+				Liam Sharpe
+			</h1>
+			<h2>
+				Online CV
+			</h2>
+		</div> <!-- close head div -->
 	</a>
-	<!-- title of the page -->
-	<a href="{{ url_for('home') }}">
-	<div id="head">
-		<h1>
-			Liam Sharpe
-		</h1>
-		<h2>
-			Online CV
-		</h2>
-	</div> <!-- close head div -->
-</a>
-		<!-- links to the other pages -->
-		<div id="menu"><a href="{{ url_for('home') }}">Home</a></div>
-		<div id="menu"><a href="{{ url_for('projects') }}">Projects</a></div>
-		<div id="menu"><a href="{{ url_for('blog') }}">Blog</a></div>
-		<div id="menu"><a href="{{ url_for('contact') }}">Contact me</a></div>
-	<div class="clearfix"></div>
-</header>
+			<!-- links to the other pages -->
+			<div id="menu"><a href="{{ url_for('home') }}">Home</a></div>
+			<div id="menu"><a href="{{ url_for('projects') }}">Projects</a></div>
+			<div id="menu"><a href="{{ url_for('blog') }}">Blog</a></div>
+			<div id="menu"><a href="{{ url_for('contact') }}">Contact me</a></div>
+		<div class="clearfix"></div>
+	</header>
 
 	{% block body %} {% endblock %}
 
