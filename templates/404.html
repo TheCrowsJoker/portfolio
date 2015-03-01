@@ -1,15 +1,22 @@
 {% extends "layout.html" %}
 {% block body %}
 
-
 <div id="error">
 	<p>
-	!!!<br>
-	Sorry, an error has occured.<br>
-	The page you are looking for does not seem to exist.<br>
-	Please check your spelling and try again.<br>
-	If the problem persists do not hesitate to <a href="{{ url_for('contact') }}">contact me</a>.<br>
-	!!!<br>
-</p>
-</div>
+		!!!
+		<br>
+		Sorry, an error has occured.
+			<br>
+		The page you are looking for does not seem to exist.
+			<br>
+		Please check your spelling and try again.
+			<br>
+		If the problem persists do not hesitate to <a href="{{ url_for('contact') }}">
+			contact me.
+		</a> <!-- close contact link -->
+		<br>
+		!!!<br>
+	</p> <!-- close paragraph -->
+</div> <!-- close error div -->
+
 {% endblock %}
