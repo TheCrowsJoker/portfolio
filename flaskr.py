@@ -17,6 +17,10 @@ def blog():
 def contact():
     return render_template("contact.html")
 
+@app.route("/blocks")
+def blocks():
+    return render_template("blocks.html")
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
