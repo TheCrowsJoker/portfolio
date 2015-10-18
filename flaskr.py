@@ -21,6 +21,10 @@ def contact():
 def blocks():
     return render_template("blocks.html")
 
+@app.route("/anna")
+def anna():
+    return render_template("anna.html")
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
