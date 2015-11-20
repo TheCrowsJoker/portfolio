@@ -9,10 +9,6 @@ def home():
 def projects():
     return render_template("projects.html")
 
-@app.route("/blog")
-def blog():
-    return render_template("blog.html")
-
 @app.route("/contact")
 def contact():
     return render_template("contact.html")

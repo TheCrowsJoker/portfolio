@@ -26,7 +26,7 @@ body {
 	background-color: #181818;
 }
 
-#menu a:hover, p a:hover{
+.menu a:hover, p a:hover{
 	color: #fff;
 }
 
@@ -34,7 +34,7 @@ a {
 	color: inherit;
 }
 
-#menu a {
+.menu a {
   text-decoration: none;
   color: #f00;
 }
@@ -53,9 +53,9 @@ p a {
 	background-color: #000;
 }
 
-#menu {
+.menu {
 	float: left;
-	width: 25%;
+	width: 33%;
 	text-align: center;
 	font: bold 20px "Century Gothic", Sans-serif;
 	margin: 2.5% 0% 2.5% 0%;
