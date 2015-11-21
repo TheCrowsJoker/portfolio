@@ -66,7 +66,27 @@ p a {
 }
 
 .twitter-follow-button {
-	text-align: right;
+	position: fixed;
+	left: 0.3%;
+	top: 8%;
+}
+
+#twitter-follow-button-dark {
+	opacity: 1;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 64px;
+}
+#twitter-follow-button-dark:hover {
+	opacity: 0;
+}
+#twitter-follow-button-active {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 61px;
 }
 
 /* Home page */

@@ -23,12 +23,12 @@
 	<body>
 		<header>
 			<!-- twitter follow button link -->
-			<a class="twitter-follow-button"
-			href="https://twitter.com/TheCrowsJoker"
-			data-show-count="false"
-			data-lang="en">
-				Follow @Liam Sharpe
-			</a>
+			<div class="twitter-follow-button">
+				<a href="https://twitter.com/TheCrowsJoker" target="_blank">
+					<img id="twitter-follow-button-dark" src="../static/images/twitterDark.png">
+					<img id="twitter-follow-button-active" src="../static/images/twitterActive.png">
+				</a>
+			</div>
 			<!-- title of the page -->
 			<a href="{{ url_for('home') }}">
 				<div id="head">
@@ -37,43 +37,29 @@
 					</h1>
 				</div>
 			</a>
-				<!-- links to the other pages -->
-				<div class="menu">
-					<a href="{{ url_for('home') }}">
-						Home
-					</a>
-				</div>
-				<div class="menu">
-					<a href="{{ url_for('projects') }}">
-						Projects
-					</a>
-				</div>
-				<div class="menu">
-					<a href="{{ url_for('contact') }}">
-						Contact me
-					</a>
-				</div>
+			<!-- links to the other pages -->
+			<div class="menu">
+				<a href="{{ url_for('home') }}">
+					Home
+				</a>
+			</div>
+			<div class="menu">
+				<a href="{{ url_for('projects') }}">
+					Projects
+				</a>
+			</div>
+			<div class="menu">
+				<a href="{{ url_for('contact') }}">
+					Contact me
+				</a>
+			</div>
 			<div class="clearfix">
 			</div>
 		</header>
 
 	{% block body %} {% endblock %}
 
-<!-- twitter follow button javascript code -->
 		<footer>
-			<script>
-					window.twttr=(function(d,s,id){
-						var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{
-						};
-						if(d.getElementById(id))return;js=d.createElement(s);
-						js.id=id;js.src="https://platform.twitter.com/widgets.js";
-						fjs.parentNode.insertBefore(js,fjs);
-						t._e=[];t.ready=function(f){
-							t._e.push(f);
-						};
-						return t;
-					}(document,"script","twitter-wjs"));
-				</script>
 			<h3>
 				&copy; Liam Sharpe 2015
 			</h3>
