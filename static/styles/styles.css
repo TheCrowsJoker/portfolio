@@ -37,6 +37,10 @@ a {
 .menu a {
   text-decoration: none;
   color: #f00;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px 100px;
+  background-color: #000;
 }
 
 p a {
@@ -117,18 +121,6 @@ p a {
 /* projects page */
 
 #projects {
-	width: auto;
-	border: 1px solid #fff;
-	border-radius: 20px;
-	box-shadow: 10px 10px 5px;
-	margin: 0% 5% 5% 5%;
-	padding: 10px;
-	background-color: #000;
-}
-
-/* blog page */
-
-#blog {
 	width: auto;
 	border: 1px solid #fff;
 	border-radius: 20px;
