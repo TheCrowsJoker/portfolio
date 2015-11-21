@@ -16,6 +16,7 @@ h3 {
 p {
 	color: #fff;
 }
+
 body {
 	background-color: #181818;
 	font: bold 20px "Century Gothic", Sans-serif;
@@ -23,6 +24,19 @@ body {
 
 a {
 	color: inherit;
+}
+
+p a {
+  text-decoration: none;
+  color: #f00;
+}
+
+#head {
+	width: auto;
+	border-radius: 20px 20px 0 0;
+	border: 1px solid #fff;
+	margin: 2.5% 5% 0% 5%;
+	background-color: #000;
 }
 
 .menu {
@@ -47,22 +61,6 @@ a {
 	margin: 0 5% 2.5% 5%;
 	border-radius: 0 0 20px 20px;
 }
-
-p a {
-  text-decoration: none;
-  color: #f00;
-}
-
-#head {
-	width: auto;
-	border-radius: 20px 20px 0 0;
-	border: 1px solid #fff;
-	box-shadow: 10px 10px 5px;
-	margin: 2.5% 5% 0% 5%;
-	background-color: #000;
-}
-
-
 
 .twitter-follow-button {
 	display: none;
