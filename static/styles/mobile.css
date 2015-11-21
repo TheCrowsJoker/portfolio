@@ -65,3 +65,27 @@ p a {
 .twitter-follow-button {
 	display: none;
 }
+
+#about, #projects, #containerContact, #error {
+	background-color: #000;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	margin: 2.5%;
+	padding: 2%;
+	text-align: justify;
+}
+
+#error {
+	text-align: center;
+}
+
+#gallery {
+	text-align: center;
+}
+
+#gallery img {
+	width: 300px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	margin: 0% 5% 0% 0%;
+}
