@@ -70,6 +70,10 @@ p a {
 	padding: 5px;
 }
 
+.menu-button img {
+	width: 4rem;
+}
+
 .twitter-follow-button {
 	display: none;
 }
