@@ -65,6 +65,10 @@ p a {
 	margin: 2.5% 0% 2.5% 0%;
 }
 
+.menu-button {
+	display: none;
+}
+
 .clearfix {
 	clear: both;
 }
