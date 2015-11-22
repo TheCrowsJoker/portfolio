@@ -1,3 +1,5 @@
+/*General stuff*/
+
 html {
 	font-size: 62.5%;
 } 
@@ -53,11 +55,7 @@ p a {
 	background-color: #000;
 	padding: 50px 0 50px 0;
 	font: normal 2rem "Century Gothic", Sans-serif;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #f00;
+	color: #f00;
 }
 
 .menu-button {
@@ -86,10 +84,14 @@ p a {
 	width: auto;
 }
 
+/*404 page*/
+
 #error p {
 	text-align: center;
 	font: normal 2rem "Century Gothic", Sans-serif;
 }
+
+/*main page*/
 
 #gallery {
 	text-align: center;
@@ -101,6 +103,8 @@ p a {
 	border-radius: 20px;
 	margin: 0% 5% 0% 0%;
 }
+
+/*contact me page*/
 
 #ss-form {
 	width: 100%;

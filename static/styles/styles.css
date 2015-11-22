@@ -1,46 +1,41 @@
 /* general stuff */
 
+html {
+	font-size: 62.5%;
+} 
+
 h1 {
 	color: #f00;
 	text-align: center;
-	font: bold 40px "Century Gothic", Sans-serif;
+	font: bold 4rem "Century Gothic", Sans-serif;
 }
 
 h2 {
 	color: #fff;
 	text-align: center;
-	font: bold 25px "Century Gothic", Sans-serif;
+	font: bold 2.5rem "Century Gothic", Sans-serif;
 }
 
 h3 {
 	color: #f00;
 	text-align: center;
-	font: bold 20px "Century Gothic", Sans-serif;
+	font: bold 2rem "Century Gothic", Sans-serif;
 }
 
 p {
-	font: normal 15px "Century Gothic", Sans-serif;
+	font: normal 1.5rem "Century Gothic", Sans-serif;
 	color: #fff;
 }
 body {
 	background-color: #181818;
 }
 
-.menu a:hover, p a:hover{
+p a:hover{
 	color: #fff;
 }
 
 a {
 	color: inherit;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #f00;
-  border: 1px solid #fff;
-  border-radius: 20px;
-  padding: 10px 100px;
-  background-color: #000;
 }
 
 p a {
@@ -52,20 +47,28 @@ p a {
 	width: auto;
 	border-radius: 20px;
 	border: 1px solid #fff;
-	box-shadow: 10px 10px 5px;
 	margin: 2.5% 5% 0% 5%;
 	background-color: #000;
 }
 
 .menu {
 	float: left;
-	width: 33%;
+	width: 23.1%;
 	text-align: center;
-	font: bold 20px "Century Gothic", Sans-serif;
-	margin: 2.5% 0% 2.5% 0%;
+	font: bold 2rem "Century Gothic", Sans-serif;
+	margin: 2.5% 5%;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	padding: 10px 0;
+	background-color: #000;
+	color: #f00;
 }
 
-.menu-button {
+.menu:hover {
+	color: #fff;
+}
+
+.menu-button, .mobile-twitter-button {
 	display: none;
 }
 
@@ -74,9 +77,10 @@ p a {
 }
 
 .twitter-follow-button {
-	position: fixed;
-	left: 0.3%;
-	top: 8%;
+	position: relative;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 #twitter-follow-button-dark {
@@ -108,7 +112,6 @@ p a {
 #gallery img {
 	width: 300px;
 	border: 1px solid #fff;
-	box-shadow: 10px 10px 5px;
 	border-radius: 20px;
 	margin: 0% 5% 0% 0%;
 	float: left;
@@ -118,10 +121,10 @@ p a {
 #about {
 	border-radius: 20px;
 	border: 1px solid #fff;
-	box-shadow: 10px 10px 5px;
 	padding: 10px;
 	background-color: #000;
 	display: table-cell;
+	text-align: justify;
 }
 
 /* projects page */
@@ -130,10 +133,10 @@ p a {
 	width: auto;
 	border: 1px solid #fff;
 	border-radius: 20px;
-	box-shadow: 10px 10px 5px;
 	margin: 0% 5% 5% 5%;
 	padding: 10px;
 	background-color: #000;
+	text-align: justify;
 }
 
 /* Contact me page */
@@ -144,13 +147,13 @@ p a {
 
 .ss-q-title {
 	color: #f00;
+	font: normal 2rem "Century Gothic", Sans-serif;
 }
 
 #containerContact {
 	width: auto;
 	border-radius: 20px;
 	border: 1px solid #fff;
-	box-shadow: 10px 10px 5px;
 	margin: 0% 5% 5% 5%;
 	background-color: #000;
 	padding: 20px;
@@ -158,14 +161,17 @@ p a {
 
 .ss-q-short {
 	width: 100%;
+	font: normal 2rem "Century Gothic", Sans-serif;
 }
 
 .ss-q-long {
 	width: 100%;
+	font: normal 2rem "Century Gothic", Sans-serif;
 }
 
 .ss-legal {
 	color: #fff;
+	font: normal 2rem "Century Gothic", Sans-serif;
 }
 
 .jfk-button  {
@@ -174,6 +180,7 @@ p a {
     color: #f00;
     border-radius: 4px;
     border: solid 1px #181818;
+    font: normal 2rem "Century Gothic", Sans-serif;
 }
 
 .jfk-button:hover {
@@ -195,7 +202,7 @@ p a {
 	margin: 0% 5% 5% 5%;
 	text-align: center;	
 	background: #000;
-	font: bold 30px "Century Gothic", Sans-serif;
+	font: bold 3rem "Century Gothic", Sans-serif;
 	border-radius: 20px;
 	border: 1px solid #fff;
 }

@@ -22,37 +22,39 @@
 	</head>
 	<body>
 		<header>
-			<!-- twitter follow button link -->
-			<div class="twitter-follow-button">
-				<a href="https://twitter.com/TheCrowsJoker" target="_blank">
-					<img id="twitter-follow-button-dark" src="../static/images/twitterDark.png">
-					<img id="twitter-follow-button-active" src="../static/images/twitterActive.png">
-				</a>
-			</div>
 			<!-- title of the page -->
 			<div id="head">
-				<a href="{{ url_for('home') }}">
-					<h1>
-						Liam Sharpe
-					</h1>
-				</a>
+				<div class="twitter-follow-button">
+					<a href="https://twitter.com/TheCrowsJoker" target="_blank">
+						<img id="twitter-follow-button-dark" src="../static/images/twitterDark.png">
+						<img id="twitter-follow-button-active" src="../static/images/twitterActive.png">
+					</a>
+				</div>
+				<h1>
+					Liam Sharpe
+				</h1>
 			</div>
 			<!-- links to the other pages -->
-			<div class="menu">
-				<a href="{{ url_for('home') }}">
+			<a href="{{ url_for('home') }}">
+				<div class="menu">
 					Home
-				</a>
-			</div>
-			<div class="menu">
-				<a href="{{ url_for('projects') }}">
+				</div>
+			</a>
+			<a href="{{ url_for('projects') }}">
+				<div class="menu">
 					Projects
-				</a>
-			</div>
-			<div class="menu">
-				<a href="{{ url_for('contact') }}">
+				</div>
+			</a>
+			<a href="{{ url_for('contact') }}">
+				<div class="menu">
 					Contact me
-				</a>
-			</div>
+				</div>
+			</a>
+			<a href="https://twitter.com/TheCrowsJoker" target="_blank">
+				<div class="menu mobile-twitter-button">
+					Follow me on Twitter
+				</div>
+			</a>
 			<div class="menu-button">&#9776; Menu</div>
 			<div class="clearfix">
 			</div>
