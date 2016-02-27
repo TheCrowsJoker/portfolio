@@ -5,8 +5,8 @@
 	<head>
 		<!-- meta tags -->
 		<meta charset="UTF-8">
-	    <meta name="keywords" content="Liam Sharpe, Computer, Programmer, Science, ">
-	    <meta name="description" content="Website of Liam Sharpe, a computer scientist.">
+	    <meta name="keywords" content="Liam Sharpe, Liam, Sharpe, Sharp, Computer, Computers, Programmer, Programming, Science">
+	    <meta name="description" content="Website for Liam Sharpe, Programmer">
 	    <meta name="author" content="Liam Sharpe">
 
 		<!-- connect to the stylesheets and javascript sources -->
@@ -15,56 +15,63 @@
 		<script src="../static/js/jquery-2.1.3.min.js"></script>
 		<script src="../static/js/menu.js"></script>
 		<link rel="shortcut icon" href="../static/images/favicon.ico">
+		<link rel="stylesheet" href="../static/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link href="../static/styles/styles.css" rel="stylesheet">
 		<title>
 			Liam Sharpe
 		</title>
 	</head>
 	<body>
-		<header>
-			<!-- title of the page -->
-			<div id="head">
-				<div class="twitter-follow-button">
-					<a href="https://twitter.com/TheCrowsJoker" target="_blank">
-						<img id="twitter-follow-button-dark" src="../static/images/twitterDark.png" alt="Follow me on twitter">
-						<img id="twitter-follow-button-active" src="../static/images/twitterActive.png" alt="Follow me on twitter active">
+		<div class="body">
+			<header>
+				<!-- title of the page -->
+				<div class="header">
+					<h1>
+						Liam Sharpe
+					</h1>
+				</div>
+				<div class="nav {% if request.path=="/" %} nav-home {% endif %}">
+					<!-- links to the other pages -->
+					<a href="{{ url_for('home') }}">
+						<span class="nav-item nav-item-home">
+							Home
+						</span>
 					</a>
+					<a href="{{ url_for('about') }}">
+						<span class="nav-item nav-item-about">
+							About
+						</span>
+					</a>
+					<a href="{{ url_for('projects') }}">
+						<span class="nav-item nav-item-projects">
+							Projects
+						</span>
+					</a>
+					<a href="{{ url_for('contact') }}">
+						<span class="nav-item nav-item-contact">
+							Contact
+						</span>
+					</a>
+					{% if request.path=="/" %}
+						<a href="https://twitter.com/TheCrowsJoker" alt="Menu icon" target="_blank">
+							<span class="nav-item nav-item-twitter">
+								My Twitter
+							</span>
+						</a>
+					{% endif %}
+					{% if request.path!="/" %}
+						<span class="mobile-menu-button">Menu</span>
+					{% endif %}
 				</div>
-				<h1>
-					Liam Sharpe
-				</h1>
-			</div>
-			<!-- links to the other pages -->
-			<a href="{{ url_for('home') }}">
-				<div class="menu">
-					Home
-				</div>
-			</a>
-			<a href="{{ url_for('projects') }}">
-				<div class="menu">
-					Projects
-				</div>
-			</a>
-			<a href="{{ url_for('contact') }}">
-				<div class="menu">
-					Contact me
-				</div>
-			</a>
-			<a href="https://twitter.com/TheCrowsJoker" alt="Menu icon" target="_blank">
-				<div class="menu mobile-twitter-button">
-					Follow me on Twitter
-				</div>
-			</a>
-			<div class="menu-button"><img src="../static/images/menu.png"> Menu</div>
-			<div class="clearfix">
-			</div>
-		</header>
+			</header>
 
-	{% block body %} {% endblock %}
+{% block body %} {% endblock %}
 
-		<footer>
-			<h3>
-				&copy; Liam Sharpe 2015
-			</h3>
-		</footer>
+			<footer>
+				<h3>
+					&copy; Liam Sharpe 2016
+				</h3>
+			</footer>
+		</div>
 	</body>
 </html>

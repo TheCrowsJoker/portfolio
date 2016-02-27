@@ -2,141 +2,149 @@
 
 html {
 	font-size: 62.5%;
-} 
-
-h1 {
-	color: #f00;
-	text-align: center;
-	font: bold 4rem "Century Gothic", Sans-serif;
 }
-
+body {
+	font-family: "Century Gothic", Sans-serif;
+	font-weight: normal;
+}
+h1 {
+	color: #ee0000;
+	text-align: center;
+	font-size: 4rem;
+	font-weight: bold;
+}
 h2 {
 	color: #fff;
 	text-align: center;
-	font: bold 2.5rem "Century Gothic", Sans-serif;
+	font-size: 2.5rem;
+	font-weight: bold;
 }
-
 h3 {
-	color: #f00;
+	color: #ee0000;
 	text-align: center;
-	font: bold 2rem "Century Gothic", Sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
 }
-
 p {
-	font: normal 1.5rem "Century Gothic", Sans-serif;
+	font-size: 1.5rem;
 	color: #fff;
 }
 body {
-	background-color: #181818;
+	background: #666 url('../images/background3.jpg');
 }
-
 p a:hover{
 	color: #fff;
 }
-
 a {
 	color: inherit;
 }
-
 p a {
   text-decoration: none;
-  color: #f00;
+  color: #ee0000;
 }
-
-#head {
-	width: auto;
-	border-radius: 20px;
+.header {
+	width: 100%;
+	border-radius: 3px;
 	border: 1px solid #fff;
-	margin: 2.5% 5% 0% 5%;
+	margin-top: 2.5%;
 	background-color: #000;
 }
-
-.menu {
-	float: left;
-	width: 23.1%;
-	text-align: center;
-	font: bold 2rem "Century Gothic", Sans-serif;
-	margin: 2.5% 5%;
-	border: 1px solid #fff;
-	border-radius: 20px;
-	padding: 10px 0;
-	background-color: #000;
-	color: #f00;
+.twitter-follow-button a:before {
+	font-family: FontAwesome;
+	content: '\f099 ';
+	color: #ee0000;
+	position: relative;
+	left: 10px;
+	top: 10px;
+	font-size: 5em;
 }
-
-.menu:hover {
+.twitter-follow-button a:hover:before {
 	color: #fff;
 }
-
-.menu-button, .mobile-twitter-button {
+.nav {
+	text-align: center;
+	width: 100%;
+}
+.nav .nav-item {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin: 1.5%;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	padding: 10px 0;
+	background-color: #000;
+	color: #ee0000;
+}
+.mobile-menu-button {
 	display: none;
 }
-
-.clearfix {
-	clear: both;
+.nav-item-home:before {
+	font-family: FontAwesome;
+	margin-right: 5px;
+	content: '\f015';
 }
-
-.twitter-follow-button {
-	position: relative;
-	float: left;
-	margin-left: 20px;
-	margin-top: 20px;
+.nav-item-about:before {
+	font-family: FontAwesome;
+	margin-right: 5px;
+	content: '\f007';
 }
-
-#twitter-follow-button-dark {
-	opacity: 1;
-	position: relative;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	width: 64px;
+.nav-item-projects:before {
+	font-family: FontAwesome;
+	margin-right: 5px;
+	content: '\f15c';
 }
-
-#twitter-follow-button-dark:hover {
-	opacity: 0;
+.nav-item-contact:before {
+	font-family: FontAwesome;
+	margin-right: 5px;
+	content: '\f0e0';
 }
-
-#twitter-follow-button-active {
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	width: 61px;
+.nav-item-twitter:before {
+	font-family: FontAwesome;
+	margin-right: 5px;
+	content: '\f099';
 }
-
-/* Home page */
-
-#container {
-	margin: 0% 5% 5% 5%;
+.mobile-menu-button:before {
+	font-family: FontAwesome;
+	margin-right: 5px;
+	content: '\f0c9';
 }
-
-#gallery img {
-	width: 300px;
-	border: 1px solid #fff;
-	border-radius: 20px;
-	margin: 0% 5% 0% 0%;
-	float: left;
-	display: table-cell;
+.nav-home {
+	margin-top: 5%;
 }
-
-#about {
-	border-radius: 20px;
-	border: 1px solid #fff;
-	padding: 10px;
-	background-color: #000;
-	display: table-cell;
-	text-align: justify;
+.nav-home .nav-item {
+	display: inline-block;
+	font-size: 3em;
+	width: 40%;
 }
-
-/* projects page */
-
-#projects {
+.nav-item:hover {
+	color: #fff;
+}
+.body {
+	max-width: 1000px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.home,
+.about,
+.projects,
+.contact,
+.error {
 	width: auto;
 	border: 1px solid #fff;
-	border-radius: 20px;
-	margin: 0% 5% 5% 5%;
-	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	padding: 20px;
 	background-color: #000;
 	text-align: justify;
+}
+.error p {
+	text-align: center;
 }
 
 /* Contact me page */
@@ -144,65 +152,79 @@ p a {
 #ss-form {
 	width: auto;
 }
-
 .ss-q-title {
-	color: #f00;
-	font: normal 2rem "Century Gothic", Sans-serif;
+	color: #ee0000;
+	font-size: 2rem;
 }
-
-#containerContact {
-	width: auto;
-	border-radius: 20px;
-	border: 1px solid #fff;
-	margin: 0% 5% 5% 5%;
-	background-color: #000;
-	padding: 20px;
-}
-
 .ss-q-short {
 	width: 100%;
-	font: normal 2rem "Century Gothic", Sans-serif;
+	font-size: 2rem;
 }
-
 .ss-q-long {
 	width: 100%;
-	font: normal 2rem "Century Gothic", Sans-serif;
+	font-size: 2rem;
 }
-
 .ss-legal {
 	color: #fff;
-	font: normal 2rem "Century Gothic", Sans-serif;
+	font-size: 2rem;
 }
-
 .jfk-button  {
     padding: 10px 15px;
     background: #000;
-    color: #f00;
+    color: #ee0000;
     border-radius: 4px;
     border: solid 1px #181818;
-    font: normal 2rem "Century Gothic", Sans-serif;
+    font-size: 1.5rem;
 }
-
 .jfk-button:hover {
     background: #000;
-    border: solid 1px #f00;
+    border: solid 1px #ee0000;
     text-decoration: none;
 }
-
 .jfk-button:active {
-    background: #f00;
-    border: solid 1px #f00;
+    background: #ee0000;
+    border: solid 1px #ee0000;
 }
 
-/* #404 page */
+/*Responsive design*/
 
-#error {
-	color: #fff;
-	width: auto;
-	margin: 0% 5% 5% 5%;
-	text-align: center;	
-	background: #000;
-	font: bold 3rem "Century Gothic", Sans-serif;
-	border-radius: 20px;
-	border: 1px solid #fff;
+@media only screen and (max-width: 500px) {
+	.header {
+		width: auto;
+		border-radius: 3px;
+		margin: 2.5% 5% 0 5%;
+	}
+	.nav .nav-item,
+	.nav-home .nav-item {
+		width: 89.8%;
+		border-radius: 3px;
+		padding: 20px 0 20px 0;
+	}
+	.mobile-menu-button {
+		display: block;
+		border: 1px solid #fff;
+		width: auto;
+		background-color: #000;
+		margin:2.5% 5% 0 5%;
+		border-radius: 3px;
+		color: #fff;
+		text-align: center;
+		font-size: 2rem;
+		padding: 20px 0 20px 0;
+	}
+	.home,
+	.about,
+	.projects,
+	.contact,
+	.error {
+		border-radius: 3px;
+		padding: 2%;
+		width: auto;
+		margin: 2.5% 5% 0 5%;
+	}
+}
+@media only screen and (min-width: 500px) {
+	.nav-item {
+		display: inline-block;
+	}
 }
