@@ -1,0 +1,46 @@
+@import 'variables';
+
+@media only screen and (min-width: $small-screen) {
+    .menu-button {
+        // Hide mobile menu button when screen is large
+        display: none;
+    }
+}
+@media only screen and (max-width: $small-screen) {
+    .menu-button {
+        // Show mobile menu button when screen is small
+        display: block;
+        color: $white;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid $white;
+        border-radius: 10px;
+        float: right;
+        &:hover,
+        &:focus {
+            color: $black;
+            background: $white;
+        }
+    }
+    .nav-wrapper {
+        .main-nav {
+            float: none;
+            .nav {
+                // Hide menu when screen is small
+                display: none;
+                li {
+                    display: list-item !important;
+                    margin-top: 20px;
+                    a {
+                        font-size: 2em;
+                        &:hover,
+                        &:focus {
+                            outline: 0;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

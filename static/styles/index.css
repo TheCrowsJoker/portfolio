@@ -1,0 +1,219 @@
+.nav-wrapper {
+  background: #000;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid #f00; }
+  .nav-wrapper .logo {
+    float: left;
+    margin: 10px; }
+    .nav-wrapper .logo a {
+      color: #fff;
+      font-size: 3em;
+      text-transform: uppercase;
+      text-decoration: none; }
+  .nav-wrapper .main-nav {
+    float: right; }
+    .nav-wrapper .main-nav .nav li {
+      list-style: none;
+      display: inline; }
+      .nav-wrapper .main-nav .nav li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.3em;
+        padding: 10px;
+        text-transform: uppercase; }
+        .nav-wrapper .main-nav .nav li a:hover, .nav-wrapper .main-nav .nav li a:focus {
+          outline: 2px solid #fff; }
+    .nav-wrapper .main-nav .nav:last-child {
+      margin-right: 10px; }
+
+.section {
+  text-align: center;
+  color: #fff;
+  padding: 60px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: center; }
+  .section h1 {
+    text-transform: uppercase;
+    font-size: 6em;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .section h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .section.even {
+    background-color: #fff;
+    color: #000; }
+  .section.main {
+    padding-top: 100px;
+    height: 75vh;
+    background-image: url("../images/smoke.png"); }
+    .section.main .heading {
+      margin-top: 10%; }
+      .section.main .heading h2 {
+        margin-bottom: 50px; }
+  .section.about .wrapper, .section.projects .wrapper {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.nav-wrapper {
+  background: #000;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid #f00; }
+  .nav-wrapper .logo {
+    float: left;
+    margin: 10px; }
+    .nav-wrapper .logo a {
+      color: #fff;
+      font-size: 3em;
+      text-transform: uppercase;
+      text-decoration: none; }
+  .nav-wrapper .main-nav {
+    float: right; }
+    .nav-wrapper .main-nav .nav li {
+      list-style: none;
+      display: inline; }
+      .nav-wrapper .main-nav .nav li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.3em;
+        padding: 10px;
+        text-transform: uppercase; }
+        .nav-wrapper .main-nav .nav li a:hover, .nav-wrapper .main-nav .nav li a:focus {
+          outline: 2px solid #fff; }
+    .nav-wrapper .main-nav .nav:last-child {
+      margin-right: 10px; }
+
+* {
+  font-family: "Verdana"; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  text-transform: uppercase;
+  font-size: 6em; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 3em; }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 2em; }
+
+p {
+  font-size: 1.8em; }
+
+a {
+  color: #f00;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+label {
+  font-size: 1.8em; }
+
+input,
+textarea {
+  border: 1px solid #000;
+  font-size: 28.8px;
+  width: 90%;
+  max-width: 1000px;
+  padding: 10px; }
+  input.submit,
+  textarea.submit {
+    color: #fff;
+    background: #000;
+    border-color: #000; }
+    input.submit:hover, input.submit.focus,
+    textarea.submit:hover,
+    textarea.submit.focus {
+      border-color: #f00;
+      color: #f00; }
+    input.submit:active,
+    textarea.submit:active {
+      color: #f00;
+      background: #fff;
+      border-color: #f00;
+      outline-color: #f00; }
+
+.ss-footer p {
+  font-size: 1.5em; }
+
+.clearfix {
+  clear: both; }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center; }
+  hr.light {
+    border-color: #fff; }
+  hr.dark {
+    color: #000; }
+
+.scroll .fa,
+.social .fa {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px;
+  width: 20px;
+  text-align: center;
+  display: inline;
+  border-radius: 50%;
+  line-height: 20px; }
+  .scroll .fa:hover, .scroll .fa:focus,
+  .social .fa:hover,
+  .social .fa:focus {
+    background: #fff;
+    color: #000; }
+.scroll:hover, .scroll:focus,
+.social:hover,
+.social:focus {
+  text-decoration: none; }
+
+.social-buttons {
+  margin-bottom: 30px; }
+
+@media only screen and (min-width: 750px) {
+  .menu-button {
+    display: none; } }
+@media only screen and (max-width: 750px) {
+  .menu-button {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    float: right; }
+    .menu-button:hover, .menu-button:focus {
+      color: #000;
+      background: #fff; }
+
+  .nav-wrapper .main-nav {
+    float: none; }
+    .nav-wrapper .main-nav .nav {
+      display: none; }
+      .nav-wrapper .main-nav .nav li {
+        display: list-item !important;
+        margin-top: 20px; }
+        .nav-wrapper .main-nav .nav li a {
+          font-size: 2em; }
+          .nav-wrapper .main-nav .nav li a:hover, .nav-wrapper .main-nav .nav li a:focus {
+            outline: 0;
+            text-decoration: underline; } }
+
+/*# sourceMappingURL=index.css.map */
