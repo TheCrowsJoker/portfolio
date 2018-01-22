@@ -1,7 +1,18 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
 
 * {
-    font-family: "Verdana";
+    font-family: 'Open Sans', "Verdana";
+}
+
+h1,
+h2,
+h3,
+h4,
+.logo a,
+.nav li a {
+    font-family: 'Cinzel', Verdana;
 }
 
 body {

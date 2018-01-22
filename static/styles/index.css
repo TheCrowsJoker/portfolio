@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
 .nav-wrapper {
   background: #000;
   position: fixed;
@@ -51,7 +53,9 @@
   .section.main {
     padding-top: 100px;
     height: 75vh;
-    background-image: url("../images/smoke.png"); }
+    background-image: url("../images/smoke.png");
+    background-position: center;
+    background-size: cover; }
     .section.main .heading {
       margin-top: 10%; }
       .section.main .heading h2 {
@@ -91,7 +95,15 @@
       margin-right: 10px; }
 
 * {
-  font-family: "Verdana"; }
+  font-family: 'Open Sans', "Verdana"; }
+
+h1,
+h2,
+h3,
+h4,
+.logo a,
+.nav li a {
+  font-family: 'Cinzel', Verdana; }
 
 body {
   padding: 0;
@@ -187,10 +199,10 @@ hr {
 .social-buttons {
   margin-bottom: 30px; }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   .menu-button {
     display: none; } }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
   .menu-button {
     display: block;
     color: #fff;
