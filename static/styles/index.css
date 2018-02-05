@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
+@import url("https://fonts.googleapis.com/css?family=Clicker+Script");
 .nav-wrapper {
   background: #000;
   position: fixed;
@@ -227,5 +228,22 @@ hr {
           .nav-wrapper .main-nav .nav li a:hover, .nav-wrapper .main-nav .nav li a:focus {
             outline: 0;
             text-decoration: underline; } }
+.hiddenPage .catcher {
+  width: 100%;
+  height: 100%;
+  background: #fff; }
+  .hiddenPage .catcher.allowedAccess {
+    display: none; }
+  .hiddenPage .catcher input {
+    width: 0;
+    height: 0;
+    opacity: 0; }
+.hiddenPage header {
+  font-family: 'Clicker Script', cursive;
+  font-size: 48px;
+  text-align: center; }
+.hiddenPage .content {
+  max-width: 635px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=index.css.map */
