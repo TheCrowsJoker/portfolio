@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var phrase = "'";
+    var phrase = "Nevermore!";
 
     $('#input').change(function() {
         var text = $('#input').val();
