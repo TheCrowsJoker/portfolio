@@ -7,22 +7,25 @@
     }
 }
 @media screen and (max-width: $small-screen) {
-    .menu-button {
-        // Show mobile menu button when screen is small
-        display: block;
-        color: $white;
-        padding: 10px;
-        margin: 10px;
-        border: 2px solid $white;
-        border-radius: 10px;
-        float: right;
-        &:hover,
-        &:focus {
-            color: $black;
-            background: $white;
-        }
-    }
     .nav-wrapper {
+        .logo a {
+            font-size: 2em;
+        }
+        .menu-button {
+            // Show mobile menu button when screen is small
+            display: block;
+            color: $white;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid $white;
+            border-radius: 10px;
+            float: right;
+            &:hover,
+            &:focus {
+                color: $black;
+                background: $white;
+            }
+        }
         .main-nav {
             float: none;
             .nav {
@@ -41,6 +44,14 @@
                     }
                 }
             }
+        }
+    }
+    .section {
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 2em;
         }
     }
 }
