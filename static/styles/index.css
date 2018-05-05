@@ -5,7 +5,7 @@
   background: #000;
   position: fixed;
   width: 100%;
-  border-bottom: 2px solid #f00; }
+  border-bottom: 2px solid #900; }
   .nav-wrapper .logo {
     float: left;
     margin: 10px; }
@@ -70,7 +70,7 @@
   background: #000;
   position: fixed;
   width: 100%;
-  border-bottom: 2px solid #f00; }
+  border-bottom: 2px solid #900; }
   .nav-wrapper .logo {
     float: left;
     margin: 10px; }
@@ -126,7 +126,7 @@ p {
   font-size: 1.8em; }
 
 a {
-  color: #f00;
+  color: #900;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -149,14 +149,15 @@ textarea {
     input.submit:hover, input.submit.focus,
     textarea.submit:hover,
     textarea.submit.focus {
-      border-color: #f00;
-      color: #f00; }
+      border-color: #000;
+      color: #000;
+      background-color: #fff; }
     input.submit:active,
     textarea.submit:active {
-      color: #f00;
-      background: #fff;
-      border-color: #f00;
-      outline-color: #f00; }
+      color: #fff;
+      background: #000;
+      border-color: #000;
+      outline-color: #900; }
 
 .ss-footer p {
   font-size: 1.5em; }
@@ -200,10 +201,10 @@ hr {
 .social-buttons {
   margin-bottom: 30px; }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none; } }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu-button {
     display: block;
     color: #fff;

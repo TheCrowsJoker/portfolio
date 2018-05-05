@@ -56,13 +56,14 @@ textarea {
         border-color: $black;
         &:hover,
         &.focus {
-            border-color: $red;
-            color: $red;
+            border-color: $black;
+            color: $black;
+            background-color: $white;
         }
         &:active {
-            color: $red;
-            background: $white;
-            border-color: $red;
+            color: $white;
+            background: $black;
+            border-color: $black;
             outline-color: $red;
         }
     }
