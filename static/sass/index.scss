@@ -1,7 +1,6 @@
-@import 'variables';
-@import 'navigation';
-@import 'sections';
-@import 'navigation';
-@import 'styles';
-@import 'mobile';
-@import "hiddenPageStyles";
+@import "_variables";
+@import "components/_navigation";
+@import "components/_sections";
+@import "components/_navigation";
+@import "components/_styles";
+@import "components/_mobile";

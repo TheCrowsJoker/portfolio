@@ -1,0 +1,45 @@
+@import "../variables";
+
+.nav-wrapper {
+  background: $black;
+  position: fixed;
+  width: calc(100% - 40px);
+  border-bottom: 2px solid $red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  .logo {
+    a {
+      color: $white;
+      font-size: 42px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  .main-nav {
+    .nav {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+        display: inline;
+
+        a {
+          color: $white;
+          text-decoration: none;
+          font-size: 22px;
+          padding: 10px;
+          text-transform: uppercase;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
