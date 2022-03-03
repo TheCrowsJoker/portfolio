@@ -77,6 +77,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+.section.footer {
+  padding-bottom: 20px;
+}
 
 .nav-wrapper {
   background: #000;
@@ -157,37 +160,35 @@ a:hover {
   text-decoration: underline;
 }
 
-label {
-  font-size: 1.8em;
+.contact .contact-input {
+  margin-bottom: 20px;
 }
-
-input,
-textarea {
-  border: 1px solid #000;
-  font-size: 28.8px;
+.contact .contact-input .sr-only {
+  display: none;
+}
+.contact .contact-input input,
+.contact .contact-input textarea {
   width: 90%;
-  max-width: 1000px;
-  padding: 10px;
+  max-width: 768px;
+  font-size: 1.8em;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 5px;
 }
-input.submit,
-textarea.submit {
-  color: #fff;
+.contact button {
+  border: 1px solid #000;
+  background: none;
+  font-size: 1.8em;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+.contact button:hover, .contact button:focus {
   background: #000;
-  border-color: #000;
-}
-input.submit:hover, input.submit.focus,
-textarea.submit:hover,
-textarea.submit.focus {
-  border-color: #000;
-  color: #000;
-  background-color: #fff;
-}
-input.submit:active,
-textarea.submit:active {
   color: #fff;
-  background: #000;
-  border-color: #000;
-  outline-color: #900;
+}
+.contact button:active {
+  border-color: #900;
+  color: #900;
 }
 
 hr {
@@ -230,7 +231,10 @@ hr.dark {
 }
 
 .social-buttons {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+.social-buttons a {
+  margin: 0 10px;
 }
 
 @media screen and (min-width: 768px) {

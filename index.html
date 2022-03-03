@@ -73,7 +73,7 @@
     </div>
 
     <!-- Gallery -->
-    <div id="galery" class="section gallery odd">
+    <div id="gallery" class="section gallery odd">
       <div class="wrapper">
         <h2>
           Gallery
@@ -90,22 +90,22 @@
         </h2>
         <hr class="dark" />
         <form name="contact" netlify>
-          <div>
+          <div class="contact-input">
             <label>
-              <span class="label">Name</span>
-              <input type="text" name="name" />
+              <span class="sr-only">Name:</span>
+              <input placeholder="Name" type="text" name="name" required />
             </label>
           </div>
-          <div>
+          <div class="contact-input">
             <label>
-              <span class="label">Email</span>
-              <input type="email" name="email" />
+              <span class="sr-only">Email:</span>
+              <input placeholder="Email" type="email" name="email" required />
             </label>
           </div>
-          <div>
+          <div class="contact-input">
             <label>
-              <span class="label">Message</span>
-              <textarea name="message"></textarea>
+              <span class="sr-only">Message:</span>
+              <textarea placeholder="Message" name="message" required></textarea>
             </label>
           </div>
           <button type="submit">Submit</button>
