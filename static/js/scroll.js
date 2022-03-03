@@ -19,7 +19,8 @@ $(document).ready(function () {
       );
     // Hide the menu if in mobile view
     if ($(window).width() < 750) {
-      $(".nav").hide();
+      $(".main-nav").removeClass("open");
+      $(".menu-button").removeClass("open");
     }
   });
 });
