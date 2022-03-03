@@ -1,107 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Cinzel");
-
-* {
-  font-family: "Open Sans", "Verdana";
-}
-
-h1,
-h2,
-h3,
-h4,
-.logo a,
-.nav li a {
-  font-family: "Cinzel", Verdana;
-}
-
 body {
   padding: 0;
   margin: 0;
-}
-
-h1 {
-  text-transform: uppercase;
-  font-size: 6em;
-}
-
-h2 {
-  text-transform: uppercase;
-  font-size: 3em;
-}
-
-h3 {
-  text-transform: uppercase;
-  font-size: 2em;
-}
-
-p {
-  font-size: $font-size;
 }
 
 a {
   color: $red;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: underline;
-  }
-}
-
-.contact {
-  .contact-input {
-    margin-bottom: 20px;
-
-    .sr-only {
-      display: none;
-    }
-
-    input,
-    textarea {
-      width: 90%;
-      max-width: 768px;
-      font-size: $font-size;
-      border: 1px solid $black;
-      border-radius: 3px;
-      padding: 5px;
-    }
-  }
-
-  button {
-    border: 1px solid $black;
-    background: none;
-    font-size: $font-size;
-    padding: 5px 15px;
-    border-radius: 3px;
-
-    &:hover,
-    &:focus {
-      background: $black;
-      color: $white;
-    }
-
-    &:active {
-      border-color: $red;
-      color: $red;
-    }
-  }
-}
-
-// Lines between the headings and content
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
-  max-width: 250px;
-  border: 0;
-  border-top: solid 5px;
-  text-align: center;
-
-  &.light {
-    border-color: $white;
-  }
-
-  &.dark {
-    color: $black;
   }
 }
 

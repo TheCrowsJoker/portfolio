@@ -1,33 +1,28 @@
-@import "../variables";
-
 .section {
   text-align: center;
   color: $white;
   padding: 60px 20px;
-  // Background image properties
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: $black;
-  background-position: center;
 
-  h1 {
-    text-transform: uppercase;
-    font-size: 6em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  h1,
+  .section-title {
+    margin: 20px 0;
   }
 
-  h2 {
-    text-transform: uppercase;
-    font-size: 3em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .section-title {
+    &:after {
+      @include section-underline($white);
+    }
   }
 
   // Makes every second section have a white background with black text to easily tell sections apart
-  &.even {
+  &:nth-of-type(2n + 1) {
     background-color: $white;
     color: $black;
+
+    .section-title:after {
+      @include section-underline($black);
+    }
   }
 
   // Styling for main section
@@ -41,17 +36,27 @@
     .heading {
       margin-top: 10%;
 
+      .title {
+        &:after {
+          @include section-underline($white);
+        }
+      }
+
       h2 {
         margin-bottom: 50px;
       }
     }
   }
 
-  &.about .wrapper,
-  &.projects .wrapper {
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
+  // Other sections
+  &.about,
+  &.galery,
+  &.contact {
+    .wrapper {
+      max-width: 950px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &.footer {

@@ -16,11 +16,12 @@
   <body>
     <!-- Navigation -->
     <div class="nav-wrapper">
-      <div class="main-nav">
-        <div class="menu-button">
-          <span class="fa fa-bars fa-2x"></span>
-        </div>
+      <div class="menu-button">
+        <span class="fa fa-bars fa-2x menu-closed"></span>
+        <span class="fa fa-times fa-2x menu-opened"></span>
+      </div>
 
+      <div class="main-nav">
         <ul class="nav">
           <li>
             <a href="#about">
@@ -42,12 +43,11 @@
     </div>
 
     <!-- Main -->
-    <div id="main" class="section main odd">
+    <div id="main" class="section main">
       <div class="heading">
-        <h1>
+        <h1 class="title">
           Liam Sharpe
         </h1>
-        <hr class="light" />
         <h2>
           Circus Performer
         </h2>
@@ -58,12 +58,11 @@
     </div>
 
     <!-- About -->
-    <div id="about" class="section about even">
+    <div id="about" class="section about">
       <div class="wrapper">
-        <h2>
+        <h2 class="section-title">
           About
         </h2>
-        <hr class="dark" />
         <p>
           Liam Sharpe is a Kiwi circus performer specializing in
           <strong>corde lisse</strong>, <strong>adagio</strong>, and
@@ -73,22 +72,20 @@
     </div>
 
     <!-- Gallery -->
-    <div id="gallery" class="section gallery odd">
+    <div id="gallery" class="section gallery">
       <div class="wrapper">
-        <h2>
+        <h2 class="section-title">
           Gallery
         </h2>
-        <hr class="light" />
       </div>
     </div>
 
     <!-- Contact -->
-    <div id="contact" class="section even contact">
+    <div id="contact" class="section contact">
       <div class="wrapper">
-        <h2>
+        <h2 class="section-title">
           Contact
         </h2>
-        <hr class="dark" />
         <form name="contact" netlify>
           <div class="contact-input">
             <label>
@@ -114,7 +111,7 @@
     </div>
 
     <!-- Footer -->
-    <div id="footer" class="section odd footer">
+    <div id="footer" class="section footer">
       <div class="social-buttons">
         <a class="social" href="https://www.instagram.com/cirque_bird/">
           <span class="fa fa-instagram fa-2x"></span>

@@ -1,0 +1,8 @@
+@mixin section-underline($color) {
+  content: '';
+  display: block;
+  width: 250px;
+  height: 5px;
+  background: $color;
+  margin: 20px auto;
+}
