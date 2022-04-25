@@ -1,0 +1,44 @@
+@import 'src/assets/sass/_variables';
+
+.contact {
+  form {
+    margin-top: 35px;
+
+    .contact-input {
+      margin-bottom: 20px;
+
+      .sr-only {
+        display: none;
+      }
+
+      input,
+      textarea {
+        width: 90%;
+        max-width: 768px;
+        font-size: $font-size;
+        border: 1px solid $black;
+        border-radius: 3px;
+        padding: 5px;
+      }
+    }
+
+    button {
+      border: 1px solid $black;
+      background: none;
+      font-size: $font-size;
+      padding: 5px 15px;
+      border-radius: 3px;
+
+      &:hover,
+      &:focus {
+        background: $black;
+        color: $white;
+      }
+
+      &:active {
+        border-color: $red;
+        color: $red;
+      }
+    }
+  }
+}
