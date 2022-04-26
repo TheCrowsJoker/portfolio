@@ -1,0 +1,65 @@
+.section {
+  text-align: center;
+  color: $white;
+  padding: 60px 20px;
+  background-color: $black;
+
+  h1,
+  .section-title {
+    margin: 20px 0;
+  }
+
+  .section-title {
+    &:after {
+      @include section-underline($white);
+    }
+  }
+
+  // Makes every second section have a white background with black text to easily tell sections apart
+  &.odd {
+    background-color: $white;
+    color: $black;
+
+    .section-title:after {
+      @include section-underline($black);
+    }
+  }
+
+  // Styling for main section
+  &.main {
+    padding-top: 100px;
+    height: 75vh;
+    background-image: url("../../images/circus_banner_1_2.jpg");
+    background-position: top center;
+    background-size: cover;
+
+    .heading {
+      margin-top: 10%;
+
+      .title {
+        &:after {
+          @include section-underline($white);
+        }
+      }
+
+      h2 {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  // Other sections
+  &.about,
+  &.galery,
+  &.contact {
+    .wrapper {
+      max-width: 950px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &.footer {
+    padding-bottom: 20px;
+  }
+}

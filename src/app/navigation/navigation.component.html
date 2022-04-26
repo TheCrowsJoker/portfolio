@@ -1,0 +1,31 @@
+<!-- Navigation -->
+<div class="nav-wrapper">
+  <div class="menu-button" (click)="menuOpened = !menuOpened">
+    <fa-icon [icon]="menuOpened ? faTimes : faBars" class="menu-closed"></fa-icon>
+  </div>
+
+  <div *ngIf="menuOpened" class="main-nav">
+    <ul class="nav">
+      <li>
+        <button (click)="scroll('main')">
+          Home
+        </button>
+      </li>
+      <li>
+        <button (click)="scroll('about')">
+          About
+        </button>
+      </li>
+      <li>
+        <button (click)="scroll('gallery')">
+          Gallery
+        </button>
+      </li>
+      <li>
+        <button (click)="scroll('contact')">
+          Contact
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
