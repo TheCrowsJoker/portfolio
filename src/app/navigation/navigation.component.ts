@@ -15,13 +15,24 @@ export class NavigationComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (window.innerWidth < 768) {
+      this.menuOpened = false;
+    }
+  }
 
   @HostListener('window:resize', ['$event'])
   onResize() {
     if (window.innerWidth > 768) {
       this.menuOpened = true;
     } else {
+      this.menuOpened = false;
+    }
+  }
+
+  scrollTo(el: string) {
+    scroll(el);
+    if (window.innerWidth < 768) {
       this.menuOpened = false;
     }
   }
