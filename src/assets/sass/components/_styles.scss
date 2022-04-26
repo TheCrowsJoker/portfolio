@@ -58,3 +58,9 @@ a {
     margin: 0 10px;
   }
 }
+
+.sr-only {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}

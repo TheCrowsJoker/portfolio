@@ -26,7 +26,6 @@ export class UpcomingShowsComponent implements OnInit {
       .subscribe((shows) => {
         shows.forEach((show) => {
           const date = new Date(show.date);
-          console.log(date);
           if (date.getTime() >= todaysDate.getTime()) {
             this.upcomingShows.push(show);
           }
