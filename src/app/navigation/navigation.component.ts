@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { scroll } from 'src/app/helpers/functions';
 
 @Component({
   selector: 'app-navigation',
@@ -10,6 +11,7 @@ export class NavigationComponent implements OnInit {
   faBars = faBars;
   faTimes = faTimes;
   menuOpened = true;
+  scroll = scroll;
 
   constructor() {}
 
@@ -21,17 +23,6 @@ export class NavigationComponent implements OnInit {
       this.menuOpened = true;
     } else {
       this.menuOpened = false;
-    }
-  }
-
-  scroll(el: string) {
-    const element = document.getElementById(el);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest',
-      });
     }
   }
 }

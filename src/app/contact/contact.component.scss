@@ -23,7 +23,8 @@
     }
 
     button {
-      border: 1px solid $black;
+      border: 1px solid $white;
+      color: $white;
       background: none;
       font-size: $font-size;
       padding: 5px 15px;
@@ -31,8 +32,8 @@
 
       &:hover,
       &:focus {
-        background: $black;
-        color: $white;
+        background: $white;
+        color: $black;
       }
 
       &:active {
