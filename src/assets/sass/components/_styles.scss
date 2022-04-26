@@ -37,6 +37,17 @@ a {
     // Remove underline from links on hover
     text-decoration: none;
   }
+
+  .section.odd & fa-icon {
+    color: $black;
+    border-color: $black;
+
+    &:hover,
+    &:focus {
+      background: $black;
+      color: $white;
+    }
+  }
 }
 
 // Put space between icons and text below

@@ -1,0 +1,38 @@
+<!-- Upcoming shows -->
+<div id="upcoming-shows" class="section upcoming-shows odd">
+  <div class="wrapper">
+    <h2 class="section-title">
+      Upcoming shows
+    </h2>
+    <div *ngIf="upcomingShows.length; else noResults">
+      <div class="upcoming-show-wrapper">
+        <div
+          *ngFor="let show of upcomingShows | slice: 0:currentLimit"
+          class="upcoming-show"
+        >
+          <h3>{{ show.title }}</h3>
+          <p class="date">{{ show.date | date: "d MMMM yyyy - hh:mm aa" }}</p>
+          <a
+            *ngIf="show.ticket_url"
+            [href]="show.ticket_url ? show.ticket_url : ''"
+            class="ticket-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Get tickets</a
+          >
+        </div>
+      </div>
+      <button
+        *ngIf="upcomingShows.length > showLimit"
+        (click)="toggleShowMoreLess()"
+        class="show-more-less-button"
+      >
+        {{ currentLimit === upcomingShows.length ? "Show less" : "Show more" }}
+      </button>
+    </div>
+
+    <ng-template #noResults>
+      <p class="no-results">No current upcoming shows</p>
+    </ng-template>
+  </div>
+</div>

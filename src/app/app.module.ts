@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MainComponent } from './main/main.component';
+import { UpcomingShowsComponent } from './upcoming-shows/upcoming-shows.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { MainComponent } from './main/main.component';
     FooterComponent,
     AboutComponent,
     GalleryComponent,
-    MainComponent
+    MainComponent,
+    UpcomingShowsComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

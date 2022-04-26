@@ -1,0 +1,43 @@
+@import 'src/assets/sass/variables';
+
+.upcoming-show-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  margin-bottom: 20px;
+
+  .upcoming-show {
+    width: 33%;
+
+    h3 {
+      font-size: 1.5em
+    }
+
+    .date {
+      font-size: 1.2em;
+    }
+
+    .ticket-link {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.show-more-less-button {
+  padding: 15px;
+  font-size: 1em;
+  background: $white;
+  border: 2px solid $black;
+  border-radius: 5px;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    background: $black;
+    color: $white;
+  }
+}
+
+.no-results {
+  font-size: 1.2em;
+}
