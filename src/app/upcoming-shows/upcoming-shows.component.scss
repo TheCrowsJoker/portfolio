@@ -6,8 +6,17 @@
   flex: 1;
   margin-bottom: 20px;
 
+  @media screen and (max-width: $small-screen) {
+    flex-direction: column;
+  }
+
   .upcoming-show {
     width: 33%;
+
+    @media screen and (max-width: $small-screen) {
+      width: 100%;
+      margin: 15px 0;
+    }
 
     h3 {
       font-size: 1.5em
