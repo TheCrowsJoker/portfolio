@@ -3,8 +3,6 @@
 .nav-wrapper {
   position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
 
   .menu-button.menu-opened {
     height: fit-content;
@@ -12,14 +10,11 @@
 
   .main-nav {
     padding: 10px 20px;
-    border: 0 solid $white;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-bottom-left-radius: 5px;
     background: $black;
 
     .nav {
       padding-left: 0;
+      margin: 10px 0;
 
       li {
         list-style: none;
@@ -31,8 +26,9 @@
           box-shadow: none;
           border: none;
           text-decoration: none;
-          font-size: 22px;
-          padding: 10px;
+          font-size: 1.2em;
+          padding: 0 10px;
+          cursor: pointer;
 
           &:hover,
           &:focus {

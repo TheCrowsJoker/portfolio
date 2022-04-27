@@ -20,7 +20,7 @@
     <fa-icon [icon]="faTimes"></fa-icon>
     <span class="sr-only">Close</span>
   </button>
-  <button (click)="goToImage(-1)" class="button previous-button">
+  <button (click)="goToImage(-1)" (keydown.arrowleft)="goToImage(-1)" class="button previous-button">
     <fa-icon [icon]="faChevronLeft"></fa-icon>
     <span class="sr-only">Previous image</span>
   </button>
