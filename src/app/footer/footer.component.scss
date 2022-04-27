@@ -1,0 +1,10 @@
+// Put space between icons and text below
+.social-buttons {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin: 0 10px;
+  }
+}

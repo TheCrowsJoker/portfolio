@@ -31,7 +31,6 @@ export class GalleryComponent implements OnInit {
 
   fullImage: string | null = null;
 
-  /** Close modal on escape */
   @HostListener('document:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent) {
     if (event.key === 'Escape') {

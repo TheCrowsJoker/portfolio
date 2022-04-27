@@ -15,10 +15,10 @@
       textarea {
         width: 90%;
         max-width: 768px;
-        font-size: $font-size;
+        font-size: 1.2em;
         border: 1px solid $black;
-        border-radius: 3px;
-        padding: 5px;
+        border-radius: 10px;
+        padding: 5px 10px;
       }
     }
 
@@ -26,9 +26,9 @@
       border: 1px solid $white;
       color: $white;
       background: none;
-      font-size: $font-size;
+      font-size: 1.2em;
       padding: 5px 15px;
-      border-radius: 3px;
+      border-radius: 15px;
 
       &:hover,
       &:focus {
