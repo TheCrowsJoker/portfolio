@@ -2,6 +2,7 @@
 
 .upcoming-show-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   flex: 1;
   margin-bottom: 20px;
@@ -12,6 +13,7 @@
 
   .upcoming-show {
     width: 33%;
+    padding-bottom: 20px;
 
     @media screen and (max-width: $small-screen) {
       width: 100%;
