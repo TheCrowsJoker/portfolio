@@ -1,5 +1,5 @@
 <!-- Upcoming shows -->
-<div id="upcoming-shows" class="section upcoming-shows odd">
+<div id="shows" class="section upcoming-shows odd">
   <div class="wrapper">
     <h2 class="section-title">
       Upcoming shows
@@ -7,7 +7,7 @@
     <div *ngIf="upcomingShows.length; else noResults">
       <div class="upcoming-show-wrapper">
         <div
-          *ngFor="let show of upcomingShows | slice: 0:currentLimit"
+          *ngFor="let show of upcomingShows"
           class="upcoming-show"
         >
           <h3>{{ show.title }}</h3>
@@ -22,13 +22,19 @@
           >
         </div>
       </div>
-      <button
-        *ngIf="upcomingShows.length > showLimit"
-        (click)="toggleShowMoreLess()"
-        class="show-more-less-button"
-      >
-        {{ currentLimit === upcomingShows.length ? "Show less" : "Show more" }}
-      </button>
+    </div>
+
+    <h2 class="section-title">
+      Past shows
+    </h2>
+    <div  class="upcoming-show-wrapper">
+      <div
+          *ngFor="let show of pastShows"
+          class="upcoming-show"
+        >
+          <h3>{{ show.title }}</h3>
+          <p class="date">{{ show.date | date: "d MMMM yyyy - hh:mm aa" }}</p>
+        </div>
     </div>
 
     <ng-template #noResults>

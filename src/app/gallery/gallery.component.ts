@@ -27,6 +27,9 @@ export class GalleryComponent implements OnInit {
     'assets/images/gallery/rawcircusiceage_31720212540_8556.jpg',
     'assets/images/gallery/rawcircusiceage_31720212540_8716.jpg',
     'assets/images/gallery/rawcircusiceage_31720212540_8747.jpg',
+    'assets/images/gallery/IMG_2022-07-30-16-35-29_2629.jpg',
+    'assets/images/gallery/rawcircus_41220222569_02274.jpg',
+    'assets/images/gallery/rawcircus_41220222569_02315.jpg'
   ];
 
   fullImage: string | null = null;

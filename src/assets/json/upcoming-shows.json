@@ -38,5 +38,20 @@
     "title": "BRAW",
     "date": "2022-10-01T20:00",
     "ticket_url": null
+  },
+  {
+    "title": "Raw: End of Year Showcase",
+    "date": "2022-12-04T16:00",
+    "ticket_url": null
+  },
+  {
+    "title": "Circus of the Night",
+    "date": "2023-02-17T19:00",
+    "ticket_url": "https://www.fringe.co.nz/show/circus-of-the-night"
+  },
+  {
+    "title": "Circus of the Night",
+    "date": "2023-02-18T19:00",
+    "ticket_url": "https://www.fringe.co.nz/show/circus-of-the-night"
   }
 ]

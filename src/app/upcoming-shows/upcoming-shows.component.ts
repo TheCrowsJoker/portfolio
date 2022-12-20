@@ -14,8 +14,7 @@ interface UpcomingShow {
 })
 export class UpcomingShowsComponent implements OnInit {
   upcomingShows: any[] = [];
-  showLimit = 3;
-  currentLimit = this.showLimit;
+  pastShows: any[] = [];
 
   constructor(private http: HttpClient) {}
 
@@ -28,15 +27,12 @@ export class UpcomingShowsComponent implements OnInit {
           const date = new Date(show.date);
           if (date.getTime() >= todaysDate.getTime()) {
             this.upcomingShows.push(show);
+          } else {
+            this.pastShows.push(show);
           }
         });
+        this.pastShows.sort();
+        this.pastShows.sort().reverse();
       });
-  }
-
-  toggleShowMoreLess() {
-    this.currentLimit =
-      this.upcomingShows.length === this.currentLimit
-        ? this.showLimit
-        : this.upcomingShows.length;
   }
 }
