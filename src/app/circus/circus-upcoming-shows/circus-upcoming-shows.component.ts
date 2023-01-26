@@ -8,11 +8,11 @@ interface UpcomingShow {
 }
 
 @Component({
-  selector: 'app-upcoming-shows',
-  templateUrl: './upcoming-shows.component.html',
-  styleUrls: ['./upcoming-shows.component.scss'],
+  selector: 'app-circus-upcoming-shows',
+  templateUrl: './circus-upcoming-shows.component.html',
+  styleUrls: ['./circus-upcoming-shows.component.scss'],
 })
-export class UpcomingShowsComponent implements OnInit {
+export class CircusUpcomingShowsComponent implements OnInit {
   upcomingShows: any[] = [];
   pastShows: any[] = [];
 
@@ -36,3 +36,4 @@ export class UpcomingShowsComponent implements OnInit {
       });
   }
 }
+

@@ -6,11 +6,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss'],
+  selector: 'app-circus-gallery',
+  templateUrl: './circus-gallery.component.html',
+  styleUrls: ['./circus-gallery.component.scss'],
 })
-export class GalleryComponent implements OnInit {
+export class CircusGalleryComponent implements OnInit {
   faTimes = faTimes;
   faChevronLeft = faChevronLeft;
   faChevronRight = faChevronRight;
@@ -61,3 +61,4 @@ export class GalleryComponent implements OnInit {
     }
   }
 }
+

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UpcomingShowsComponent } from './upcoming-shows.component';
+import { CircusBannerComponent } from './circus-banner.component';
 
-describe('UpcomingShowsComponent', () => {
-  let component: UpcomingShowsComponent;
-  let fixture: ComponentFixture<UpcomingShowsComponent>;
+describe('CircusBannerComponent', () => {
+  let component: CircusBannerComponent;
+  let fixture: ComponentFixture<CircusBannerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UpcomingShowsComponent ]
+      declarations: [ CircusBannerComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UpcomingShowsComponent);
+    fixture = TestBed.createComponent(CircusBannerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

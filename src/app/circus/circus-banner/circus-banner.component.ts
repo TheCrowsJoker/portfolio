@@ -3,11 +3,11 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { scroll } from 'src/app/helpers/functions';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss'],
+  selector: 'app-circus-banner',
+  templateUrl: './circus-banner.component.html',
+  styleUrls: ['./circus-banner.component.scss'],
 })
-export class MainComponent implements OnInit {
+export class CircusBannerComponent implements OnInit {
   faChevronDown = faChevronDown;
   scroll = scroll;
 

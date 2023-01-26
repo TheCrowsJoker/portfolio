@@ -2,15 +2,26 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { NavigationComponent } from './navigation/navigation.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './circus/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { MainComponent } from './main/main.component';
-import { UpcomingShowsComponent } from './upcoming-shows/upcoming-shows.component';
+import { CircusAboutComponent } from './circus/circus-about/circus-about.component';
+import { CircusGalleryComponent } from './circus/circus-gallery/circus-gallery.component';
+import { CircusBannerComponent } from './circus/circus-banner/circus-banner.component';
+import { CircusUpcomingShowsComponent } from './circus/circus-upcoming-shows/circus-upcoming-shows.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CircusComponent } from './circus/circus.component';
+import { DevComponent } from './dev/dev.component';
+import { DevBannerComponent } from './dev/dev-banner/dev-banner.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: 'dev', pathMatch: 'full' },
+  { path: 'dev', component: DevComponent },
+  { path: 'circus', component: CircusComponent },
+];
 
 @NgModule({
   declarations: [
@@ -18,17 +29,22 @@ import { HttpClientModule } from '@angular/common/http';
     NavigationComponent,
     ContactComponent,
     FooterComponent,
-    AboutComponent,
-    GalleryComponent,
-    MainComponent,
-    UpcomingShowsComponent
+    CircusAboutComponent,
+    CircusGalleryComponent,
+    CircusBannerComponent,
+    CircusUpcomingShowsComponent,
+    CircusComponent,
+    DevComponent,
+    DevBannerComponent,
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes),
   ],
+  exports: [RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
