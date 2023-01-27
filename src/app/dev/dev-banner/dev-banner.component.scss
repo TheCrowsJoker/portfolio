@@ -1,0 +1,15 @@
+.banner {
+    .banner-title {
+        position: 'absolute';
+        left: 0;
+        float: left;
+        z-index: 2;
+    }
+
+    .banner-keyboard {
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        z-index: 1;
+    }
+}

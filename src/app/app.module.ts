@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CircusComponent } from './circus/circus.component';
 import { DevComponent } from './dev/dev.component';
 import { DevBannerComponent } from './dev/dev-banner/dev-banner.component';
+import { DevKeyboardComponent } from './dev/dev-banner/dev-keyboard/dev-keyboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dev', pathMatch: 'full' },
@@ -36,6 +37,7 @@ const routes: Routes = [
     CircusComponent,
     DevComponent,
     DevBannerComponent,
+    DevKeyboardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<div class="keyboard">
+  <div *ngFor="let row of keys" class="row">
+    <div
+      *ngFor="let key of row"
+      class="key {{ key.class ? key.class : '' }}"
+      [class.pressed]="key.pressed"
+    >
+      {{ key.label !== "" ? key.label : "&nbsp;" }}
+    </div>
+  </div>
+</div>
