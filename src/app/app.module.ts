@@ -17,6 +17,7 @@ import { CircusComponent } from './circus/circus.component';
 import { DevComponent } from './dev/dev.component';
 import { DevBannerComponent } from './dev/dev-banner/dev-banner.component';
 import { DevKeyboardComponent } from './dev/dev-banner/dev-keyboard/dev-keyboard.component';
+import { DevTechComponent } from './dev/dev-tech/dev-tech.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dev', pathMatch: 'full' },
@@ -38,6 +39,7 @@ const routes: Routes = [
     DevComponent,
     DevBannerComponent,
     DevKeyboardComponent,
+    DevTechComponent,
   ],
   imports: [
     BrowserModule,

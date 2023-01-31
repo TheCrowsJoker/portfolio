@@ -10,7 +10,7 @@ import { Pages } from './constants';
 })
 export class AppComponent {
   title = 'Liam Sharpe |';
-  page: string = 'dev';
+  page: string = Pages.dev;
 
   constructor(private router: Router, private titleService: Title) {
     router.events.subscribe((route) => {

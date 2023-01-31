@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 interface Keys {
   label: string;
@@ -12,6 +12,8 @@ interface Keys {
   styleUrls: ['./dev-keyboard.component.scss'],
 })
 export class DevKeyboardComponent implements OnInit {
+  @Input() paused: boolean = false;
+
   keys: Keys[][] = [
     [
       {
@@ -283,24 +285,27 @@ export class DevKeyboardComponent implements OnInit {
   ngOnInit(): void {
     // Press a new key every 500m/s
     setInterval(
-      function (keys: Keys[][]) {
+      function (keys: Keys[][], paused: boolean) {
         const randRow = Math.floor(Math.random() * keys.length); // Get random row
         const randKey = Math.floor(Math.random() * keys[randRow].length); // Get random key in row
         const key = keys[randRow][randKey];
 
-        key.pressed = !key.pressed; // Set key as pressed
+        if (!paused) {
+          key.pressed = !key.pressed; // Set key as pressed
 
-        // Set key as unpressed after 200m/s
-        setTimeout(
-          function (key: Keys) {
-            key.pressed = !key.pressed;
-          },
-          200,
-          key
-        );
+          // Set key as unpressed after 200m/s
+          setTimeout(
+            function (key: Keys) {
+              key.pressed = !key.pressed;
+            },
+            200,
+            key
+          );
+        }
       },
       300,
-      this.keys
+      this.keys,
+      this.paused
     );
   }
 }
