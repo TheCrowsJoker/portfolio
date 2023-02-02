@@ -18,6 +18,8 @@ import { DevComponent } from './dev/dev.component';
 import { DevBannerComponent } from './dev/dev-banner/dev-banner.component';
 import { DevKeyboardComponent } from './dev/dev-banner/dev-keyboard/dev-keyboard.component';
 import { DevTechComponent } from './dev/dev-tech/dev-tech.component';
+import { DevAboutComponent } from './dev/dev-about/dev-about.component';
+import { DevWorkComponent } from './dev/dev-work/dev-work.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dev', pathMatch: 'full' },
@@ -40,6 +42,8 @@ const routes: Routes = [
     DevBannerComponent,
     DevKeyboardComponent,
     DevTechComponent,
+    DevAboutComponent,
+    DevWorkComponent,
   ],
   imports: [
     BrowserModule,

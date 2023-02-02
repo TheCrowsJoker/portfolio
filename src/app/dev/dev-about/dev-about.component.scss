@@ -1,0 +1,39 @@
+$scale: 0.5;
+
+#about {
+  height: 50vh;
+  background-color: #eaeaea;
+  padding: 20px;
+
+  h2 {
+    font-family: "RubikVinyl";
+    text-align: center;
+    color: #4f6d7a;
+  }
+
+  .about-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .about-summary {
+      text-align: center;
+      background: #fff;
+      width: 500px;
+      border-radius: 15px;
+      padding: 10px;
+
+      p span {
+        color: #dd6e42;
+      }
+    }
+
+    .keyboard-wrapper {
+      width: calc(920px * #{$scale});
+
+      .keyboard {
+        transform: scale($scale) translate(-50%, -25%) rotate(15deg);
+      }
+    }
+  }
+}
