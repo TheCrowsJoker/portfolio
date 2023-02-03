@@ -40,7 +40,8 @@
     }
 
     .work-item-title {
-      padding: 0 15px;
+      padding: 0 20px;
+      flex: 1;
 
       h3 {
         font-size: 1.4em;
@@ -50,6 +51,16 @@
     }
 
     .work-item-image {
+      flex: 1;
+
+      &:nth-of-type(even) {
+        text-align: right;
+      }
+  
+      &:nth-of-type(odd) {
+        text-align: left;
+      }
+
       img {
         width: 400px;
       }
