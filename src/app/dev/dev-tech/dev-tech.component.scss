@@ -1,11 +1,13 @@
+@import 'src/assets/sass/variables';
+
 #tech {
-  background-color: #fff;
+  background-color: $white;
   padding: 20px 20px 60px;
 
   h2 {
-    font-family: "RubikVinyl";
+    font-family: $heading-font;
     text-align: center;
-    color: #4f6d7a;
+    color: $blue;
   }
 
   .items {
@@ -15,6 +17,11 @@
     align-items: flex-start;
     overflow: hidden;
 
+    @media only screen and (max-width: #{$small-screen}) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .item {
       flex: 1;
       display: flex;
@@ -23,6 +30,10 @@
       align-items: center;
       margin: 0 20px;
       max-width: 250px;
+
+      @media only screen and (max-width: #{$small-screen}) {
+        margin: 30px;
+      }
 
       .icon {
         font-size: 5em;
@@ -46,11 +57,11 @@
     }
 
     .item-mobile {
-      color: #4f6d7a;
+      color: $blue;
     }
 
     .item-code {
-      color: #dd4b25;
+      color: $orange;
     }
   }
 }

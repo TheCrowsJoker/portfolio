@@ -1,11 +1,52 @@
+@import "src/assets/sass/variables";
+
 #work {
-  height: 50vh;
-  background-color: #eaeaea;
+  background-color: $lightGrey;
   padding: 20px;
 
   h2 {
-    font-family: "RubikVinyl";
+    font-family: $heading-font;
     text-align: center;
-    color: #4f6d7a;
+    color: $blue;
+  }
+
+  .work-item {
+    display: flex;
+    width: 60%;
+    max-width: 900px;
+    margin: 60px auto;
+    justify-content: space-between;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-of-type(odd) {
+      text-align: right;
+    }
+
+    @media only screen and (max-width: #{$mid-screen}) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &:nth-of-type(even) {
+        flex-direction: column;
+      }
+
+      &:nth-of-type(odd) {
+        text-align: center;
+      }
+    }
+
+    .work-item-title {
+      padding: 0 15px;
+
+      h3 {
+        font-size: 1.4em;
+        margin: 0;
+        color: $orange;
+      }
+    }
   }
 }

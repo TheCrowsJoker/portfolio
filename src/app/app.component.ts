@@ -9,7 +9,7 @@ import { Pages } from './constants';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Liam Sharpe |';
+  title = 'Liam Sharpe | Web Developer';
   page: string = Pages.dev;
 
   constructor(private router: Router, private titleService: Title) {
