@@ -1,7 +1,6 @@
-@import 'src/assets/sass/_variables';
+@import "src/assets/sass/_variables";
 
 .nav-wrapper {
-  position: fixed;
   width: 100%;
 
   .menu-button.menu-opened {
@@ -11,8 +10,16 @@
   .main-nav {
     padding: 10px 20px;
     background: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .nav {
+    .title a {
+      color: $white;
+      font-size: 1.7em;
+    }
+
+    ul {
       padding-left: 0;
       margin: 10px 0;
 
@@ -20,7 +27,8 @@
         list-style: none;
         display: inline;
 
-        button {
+        button,
+        a {
           color: $white;
           background: none;
           box-shadow: none;
@@ -33,6 +41,25 @@
           &:hover,
           &:focus {
             text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &.dev {
+    .main-nav {
+      background: $white;
+
+      .title a {
+        color: $black;
+      }
+
+      ul {
+        li {
+          button,
+          a {
+            color: $black;
           }
         }
       }

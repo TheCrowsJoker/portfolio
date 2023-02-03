@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  background: #eaeaea;
+  padding: 10px;
+
+  .github {
+    margin: 20px;
+
+    a {
+      font-size: 3em;
+      color: #000;
+
+      &:hover,
+      &:focus {
+        color: #dd6e42;
+      }
+    }
+  }
+}

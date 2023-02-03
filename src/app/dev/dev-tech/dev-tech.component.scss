@@ -1,0 +1,67 @@
+@import 'src/assets/sass/variables';
+
+#tech {
+  background-color: $white;
+  padding: 20px 20px 60px;
+
+  h2 {
+    font-family: $heading-font;
+    text-align: center;
+    color: $blue;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: hidden;
+
+    @media only screen and (max-width: #{$small-screen}) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 20px;
+      max-width: 250px;
+
+      @media only screen and (max-width: #{$small-screen}) {
+        margin: 30px;
+      }
+
+      .icon {
+        font-size: 5em;
+      }
+
+      h3 {
+        font-size: 1.4em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    .item-angular {
+      color: #d6002f;
+    }
+
+    .item-sass {
+      color: #c66394;
+    }
+
+    .item-mobile {
+      color: $blue;
+    }
+
+    .item-code {
+      color: $orange;
+    }
+  }
+}

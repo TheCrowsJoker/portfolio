@@ -1,0 +1,75 @@
+@import "src/assets/sass/variables";
+
+#work {
+  background-color: $lightGrey;
+  padding: 20px;
+
+  h2 {
+    font-family: $heading-font;
+    text-align: center;
+    color: $blue;
+  }
+
+  .work-item {
+    display: flex;
+    width: 75%;
+    max-width: 900px;
+    margin: 60px auto;
+    justify-content: space-between;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-of-type(odd) {
+      text-align: right;
+    }
+
+    @media only screen and (max-width: #{$mid-screen}) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &:nth-of-type(even) {
+        flex-direction: column;
+      }
+
+      &:nth-of-type(odd) {
+        text-align: center;
+      }
+    }
+
+    .work-item-title {
+      padding: 0 20px;
+      flex: 1;
+
+      h3 {
+        font-size: 1.4em;
+        margin: 0;
+        color: $orange;
+      }
+    }
+
+    .work-item-image {
+      flex: 1;
+
+      &:nth-of-type(even) {
+        text-align: right;
+      }
+  
+      &:nth-of-type(odd) {
+        text-align: left;
+      }
+
+      img {
+        width: 400px;
+      }
+
+      &.image-mobile {
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

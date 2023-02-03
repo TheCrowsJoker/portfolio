@@ -1,0 +1,49 @@
+@import "/src/assets/sass/variables";
+
+.keyboard {
+  display: inline-block;
+  background: #eaeaea;
+  width: 920px;
+  padding: 4px 0;
+  border-radius: 5px;
+
+  .row {
+    .key {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      font-size: 1.7em;
+      background: $white;
+      box-shadow: 0px 1px 0px 2px #ddd;
+      margin: 4px;
+      padding: 2px;
+
+      &.pressed {
+        background: #eee;
+        box-shadow: 0px 0px 0px 1px #aaa;
+      }
+
+      &.key-backspace,
+      &.key-tab,
+      &.key-caps,
+      &.key-ctrl,
+      &.key-win,
+      &.key-alt {
+        width: 100px;
+      }
+
+      &.key-enter {
+        width: 110px;
+      }
+
+      &.key-shift {
+        width: 135px;
+      }
+
+      &.key-space {
+        width: 280px;
+      }
+    }
+  }
+}

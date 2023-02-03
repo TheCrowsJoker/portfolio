@@ -1,0 +1,81 @@
+@import "src/assets/sass/variables";
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+  @media only screen and (max-width: #{$small-screen}) {
+    display: block;
+    height: auto;
+  }
+
+  .banner-title {
+    height: 50vh;
+  }
+
+  .banner-title {
+    background: $lightGrey;
+    color: $white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: #{$small-screen}) {
+      background: $white;
+    }
+
+    @media only screen and (min-width: #{$small-screen}) {
+      animation: slide-in 1s ease-out 0s forwards;
+    }
+
+    h1,
+    h2 {
+      width: 0;
+      margin: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      text-align: center;
+      font-family: $heading-font;
+
+      @media only screen and (max-width: #{$mid-screen}) {
+        white-space: initial;
+      }
+    }
+
+    h1 {
+      color: $blue;
+      animation: typing 2s steps(40, end) 1s forwards;
+    }
+
+    h2 {
+      color: $orange;
+      animation: typing 2s steps(40, end) 2.5s forwards;
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    width: 100%;
+    border-radius: 0;
+  }
+  100% {
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    width: 70%;
+  }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

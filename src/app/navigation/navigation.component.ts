@@ -1,6 +1,7 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { scroll } from 'src/app/helpers/functions';
+import { Pages } from 'src/app/constants';
 
 @Component({
   selector: 'app-navigation',
@@ -8,6 +9,9 @@ import { scroll } from 'src/app/helpers/functions';
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent implements OnInit {
+  @Input() page: string = '';
+  Pages = Pages;
+
   faBars = faBars;
   faTimes = faTimes;
   menuOpened = true;
@@ -37,3 +41,4 @@ export class NavigationComponent implements OnInit {
     }
   }
 }
+

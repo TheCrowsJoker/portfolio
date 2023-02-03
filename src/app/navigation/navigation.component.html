@@ -1,36 +1,52 @@
 <!-- Navigation -->
-<div class="nav-wrapper">
-  <div class="menu-button" [class.menu-opened]="menuOpened" (click)="menuOpened = !menuOpened">
+<div
+  class="nav-wrapper"
+  [class.dev]="page === Pages.dev"
+  [class.circus]="page === Pages.circus"
+>
+  <div
+    class="menu-button"
+    [class.menu-opened]="menuOpened"
+    (click)="menuOpened = !menuOpened"
+  >
     <fa-icon [icon]="menuOpened ? faTimes : faBars"></fa-icon>
   </div>
 
   <div *ngIf="menuOpened" class="main-nav">
-    <ul class="nav">
-      <li>
-        <button (click)="scrollTo('main')">
-          Home
-        </button>
-      </li>
-      <li>
-        <button (click)="scrollTo('about')">
-          About
-        </button>
-      </li>
-      <li>
-        <button (click)="scrollTo('gallery')">
-          Gallery
-        </button>
-      </li>
-      <li>
-        <button (click)="scrollTo('shows')">
-          Shows
-        </button>
-      </li>
-      <li>
-        <button (click)="scrollTo('contact')">
-          Contact
-        </button>
-      </li>
-    </ul>
+    <div class="title">
+      <a>Liam Sharpe</a>
+    </div>
+    <div>
+      <ul class="nav">
+        <li>
+          <button (click)="scrollTo('about')">About</button>
+        </li>
+        <li *ngIf="page === Pages.circus">
+          <button (click)="scrollTo('gallery')">Gallery</button>
+        </li>
+        <li *ngIf="page === Pages.circus">
+          <button (click)="scrollTo('shows')">Shows</button>
+        </li>
+        <li *ngIf="page === Pages.dev">
+          <button (click)="scrollTo('tech')">Tech</button>
+        </li>
+        <li *ngIf="page === Pages.dev">
+          <button (click)="scrollTo('work')">Work</button>
+        </li>
+        <li>
+          <button (click)="scrollTo('contact')">Contact</button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="nav-toggle">
+        <li *ngIf="page === Pages.circus">
+          <a routerLink="dev">{{ Pages.dev }}</a>
+        </li>
+        <li *ngIf="page === Pages.dev">
+          <a routerLink="circus">{{ Pages.circus }}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
