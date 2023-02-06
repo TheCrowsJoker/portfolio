@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-dev',
@@ -10,6 +10,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export class DevComponent implements OnInit {
   faCopyright = faCopyright;
   faGithub = faGithub;
+  faLinkedin = faLinkedin;
 
   constructor() {}
 
