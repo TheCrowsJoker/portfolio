@@ -3,8 +3,19 @@
 .nav-wrapper {
   width: 100%;
 
-  .menu-button.menu-opened {
-    height: fit-content;
+  .menu-button {
+    color: $white;
+    border-color: $white;
+
+    &:hover,
+    &:focus {
+      background: $white;
+      color: $black;
+    }
+
+    .menu-opened {
+      height: fit-content;
+    }
   }
 
   .main-nav {
@@ -14,9 +25,16 @@
     justify-content: space-between;
     align-items: center;
 
-    .title a {
-      color: $white;
-      font-size: 1.7em;
+    @media screen and (max-width: $small-screen) {
+      flex-direction: column;
+    }
+
+    .title {
+      display: none;
+      a {
+        color: $white;
+        font-size: 1.7em;
+      }
     }
 
     ul {
@@ -48,6 +66,17 @@
   }
 
   &.dev {
+    .menu-button {
+      color: $black;
+      border-color: $black;
+
+      &:hover,
+      &:focus {
+        background: $black;
+        color: $white;
+      }
+    }
+
     .main-nav {
       background: $white;
 
@@ -62,6 +91,10 @@
             color: $black;
           }
         }
+      }
+
+      .nav-toggle {
+        margin-top: 0;
       }
     }
   }

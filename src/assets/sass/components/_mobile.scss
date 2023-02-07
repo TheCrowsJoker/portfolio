@@ -9,13 +9,15 @@
   .nav-wrapper {
     .menu-button {
       display: block; // Show mobile menu button when screen is small
-      color: $white;
       padding: 10px;
       margin: 10px;
-      border: 2px solid $white;
+      border: 2px solid $black;
       border-radius: 10px;
-      float: right;
-      background: $black;
+      background: transparent;
+      text-align: center;
+      color: $black;
+      position: absolute;
+      right: 0;
 
       &.open {
         margin: 0 0 10px 10px;
@@ -28,9 +30,9 @@
 
       &:hover,
       &:focus {
-        color: $black;
-        background: $white;
-        border-color: $black;
+        color: $white;
+        background: $black;
+        border-color: $white;
       }
     }
 
@@ -43,7 +45,7 @@
 
       .nav {
         li {
-          display: list-item !important;
+          // display: list-item !important;
           margin-top: 20px;
 
           a {
