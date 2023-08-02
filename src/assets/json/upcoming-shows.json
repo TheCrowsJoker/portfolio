@@ -69,5 +69,39 @@
   {
     "title": "Cuba Dupa",
     "date": "2023-03-26T12:00"
+  },
+  {
+    "title": "Circus of the Night",
+    "date": "2023-04-13T19:30",
+    "ticket_url": "https://www.eventfinda.co.nz/2023/circus-of-the-night2/wellington"
+  },
+  {
+    "title": "Circus of the Night",
+    "date": "2023-06-08T19:30",
+    "ticket_url": "https://www.eventfinda.co.nz/2023/circus-of-the-night3/wellington"
+  },
+  {
+    "title": "Circus of the Night",
+    "date": "2023-07-13T19:30",
+    "ticket_url": "https://www.eventfinda.co.nz/2023/circus-of-the-night4/wellington"
+  },
+  {
+    "title": "Last Chance Gala",
+    "date": "2023-08-05T19:30",
+    "ticket_url": "https://www.eventfinda.co.nz/2023/last-chance-circus-hub-gala-show/wellington"
+  },
+  {
+    "title": "Circus of the Night",
+    "date": "2023-08-27T19:00",
+    "ticket_url": "https://www.eventfinda.co.nz/2023/circus-of-the-night5/wellington"
+  },
+  {
+    "title": "RAW: Nightmares",
+    "date": "2023-10-07T19:00"
+  },
+  {
+    "title": "Circus of the Night",
+    "date": "2023-11-09T19:00",
+    "ticket_url": "https://www.eventfinda.co.nz/2023/circus-of-the-night-november/wellington"
   }
 ]
