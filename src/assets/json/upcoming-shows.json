@@ -174,5 +174,19 @@
     "title": "Circus of the Night",
     "date": "2024-03-28T19:30",
     "ticket_url": "https://www.eventfinda.co.nz/2024/circus-of-the-night-2024/wellington"
+  },
+  {
+    "title": "Circus of the Night",
+    "date": "2024-04-18T19:00",
+    "ticket_url": "https://www.eventfinda.co.nz/2024/circus-of-the-night-april/wellington"
+  },
+  {
+    "title": "Scratch Night",
+    "date": "2024-04-26T19:00",
+    "ticket_url": "https://www.eventfinda.co.nz/2024/laser-kiwi-scratch-night-live/wellington"
+  },
+  {
+    "title": "Star Raws",
+    "date": "2024-05-04T19:00"
   }
 ]
